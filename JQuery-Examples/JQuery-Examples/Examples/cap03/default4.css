@@ -1,0 +1,37 @@
+body, h1, blockquote, p {
+	font-family: Geneva;
+	color: #666666;
+}
+
+body {
+	width: 600px;
+	padding: 20px;
+	margin: 20px;
+	
+	background-color: white;
+	line-height: 200%;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	
+	padding: 0;
+	margin: 0 0 20px 0;
+	
+	color: #B27D7D;
+}
+
+span {
+	color: #B27D7D;
+}
+
+div {
+	margin-left: 20px;
+	color: #888888;
+	font-weight: bold;
+}
+
+.highlighted {
+	border: 2px solid red;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	<link rel="stylesheet" type="text/css" 
+  		href="default7.css"/>
+  </head>
+  <body>
+  	<div id="content">
+  		<div id="playarea">
+  			<div id="square"/>
+  		</div>
+  	</div>
+	<div id="info">&nbsp;</div>
+  </body>
+  <script>
+$('#playarea').click(
+	function(e) {
+		var x = e.pageX;
+		var y = e.pageY;
+		
+		var square = $('#square');
+		
+		var text = "";
+		text += "click ";
+		text += "(" + x + ", " + y + ") ";
+		text += "offset ";
+		text += dump(square.offset());
+		text += " position ";
+		text += dump(square.position());
+			
+		$('#info').text(text);
+					
+		var left = x - 
+			square.outerWidth() / 2;
+			
+		var top = y - 
+			square.outerHeight() / 2;
+		
+		$('#square').offset(
+			{ 'left': left, 
+			  'top': top }
+		);
+	}
+);
+function dump(o) {
+	return "(" + o.left + ", " + o.top + ")";
+}
+  </script>
+</html>

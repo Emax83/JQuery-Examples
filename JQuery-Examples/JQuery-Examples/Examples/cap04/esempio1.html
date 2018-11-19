@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	<link rel="stylesheet" type="text/css" 
+  		href="default1.css"/>
+  </head>
+  <body>
+  	<div id="content">
+  		<div>Spider man</div>
+  		<div>Superman</div>
+  		<div>Iron man</div>
+  		<div>Thor</div>
+  		<div>Captain America</div>
+  		<div>Wonder Woman</div>
+  	</div>
+  </body>
+  <script>
+$('div:not(#content)').css(
+	'background-color', 
+	function(index,value) {
+		if (index > 1) {
+			var f = Math.round(
+			  (150 * (6 - index)) / 6);
+			$(this).css('color',
+			  'rgb('+f+','+f+','+f+')');
+		}
+			
+		var b = Math.round(
+			(100 * index) / 6 + 155);
+		var color = 
+			'rgb('+b+','+b+','+b+')';
+		
+		return color;
+	}
+);
+  </script>
+</html>

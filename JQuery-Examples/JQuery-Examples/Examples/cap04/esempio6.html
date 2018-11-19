@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	<link rel="stylesheet" type="text/css" 
+  		href="default6.css"/>
+  </head>
+  <body>
+  	<div id="content"/>
+  </body>
+  <script>
+	var content = $('#content');
+	var text = "";
+	
+	text += "width=" + content.width();
+	text += "<br/>"
+	text += "height=" + content.height();	
+	text += "<br/>"
+	text += "innerWidth=" 
+		+ content.innerWidth();
+	text += "<br/>"
+	text += "innerHeight=" 
+		+ content.innerHeight();	
+	text += "<br/>"
+	text += "outerWidth=" 
+		+ content.outerWidth();
+	text += "<br/>"
+	text += "outerHeight=" 
+		+ content.outerHeight();	
+	text += "<br/>"
+	
+  	content.append(text);
+  </script>
+</html>

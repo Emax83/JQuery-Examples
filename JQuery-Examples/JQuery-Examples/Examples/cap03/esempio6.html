@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	
+  	<link rel="stylesheet" type="text/css" 
+  		href="default6.css"/>
+  </head>
+  <body>
+  	<h1>Tabella libri in catalogo</h1>
+  	<table>
+  		<tr>
+  			<th>Titolo</th>
+  			<th>ISBN</th>
+  		</tr>
+  		<tr>
+  			<td>UML Pocket</td>
+  			<td>9788850326273</td>
+  		</tr>
+  		<tr>
+  			<td>C Pocket</td>
+  			<td>9788850326662</td>
+  		</tr>
+  		<tr>
+  			<td>E-commerce con PayPal</td>
+  			<td>9788850327522</td>
+  		</tr>
+  		<tr>
+  			<td>Ajax Pocket</td>
+  			<td>9788850328970</td>
+  		</tr>
+  		<tr>
+  			<td>C# 4.0 Pocket</td>
+  			<td>9788850329380</td>
+  		</tr>
+  		<tr>
+  			<td>ASP.NET 4 Pocket</td>
+  			<td>9788850329434</td>
+  		</tr>
+  		<tr>
+  			<td>Visual Basic 2010</td>
+  			<td>9788850329427</td>
+  		</tr>
+  		<tr>
+  			<td>iPad Pocket Color</td>
+  			<td>9788850329915</td>
+  		</tr>
+  		<tr>
+  			<td>Objective-C Pocket</td>
+  			<td>9788850330126</td>
+  		</tr>
+  		<tr>
+  			<td>iPad 2 Pocket Color</td>
+  			<td>9788850330867</td>
+  		</tr>
+	</table>
+	<button id="s1">Top, bottom e dispari</button>
+	<button id="s2">3,5,6,9</button>
+	<button id="s3">Tra 1 e 6</button>
+	<button id="s4">Top e bottom</button>
+	<script>
+function reset() {
+	$('tr')
+		.css('background-color', '');
+}
+$('#s1').click( function() {
+reset();
+$('tr:first')
+	.css('background-color', '#D1D9E8');
+$('tr:odd')
+	.css('background-color', '#FFEFD5');
+$('tr:last')
+	.css('background-color', '#B6D9E8');
+});
+
+$('#s2').click( function() {
+reset();
+$('tr:eq(3)')
+	.css('background-color', '#FFEFD5');
+$('tr:eq(5)')
+	.css('background-color', '#FFEFD5');
+$('tr:eq(6)')
+	.css('background-color', '#FFEFD5');
+$('tr:eq(9)')
+	.css('background-color', '#FFEFD5');
+});
+
+$('#s3').click( function() {
+reset();
+$('tr:lt(6):gt(1)')
+	.css('background-color', '#FFEFD5');
+});
+
+$('#s4').click( function() {
+reset();
+$('tr:first-child')
+	.css('background-color', '#D1D9E8');
+$('tr:last-child')
+	.css('background-color', '#B6D9E8');
+});
+
+	</script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+body {
+	font-family: Geneva;
+	font-size: 12px;
+	padding: 20px;
+	margin: 20px;	
+	color: #666666;
+	background-color: white;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	
+	padding: 0;	
+	margin: 0 0 20px 0;
+	
+	color: #B27D7D;
+}
+
+#tempPage {
+	display: none;
+}
+
+#error {
+	margin-top: 5px;
+	border: 1px solid red;
+	color: red;
+	background-color: #ffcccc;
+	padding: 10px;
+}

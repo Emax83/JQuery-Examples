@@ -1,0 +1,23 @@
+body {
+	padding: 20px;
+	margin: 20px;
+	background-color: white;
+}
+
+#content {
+	border-width: 10px;
+	border-color: #999999;
+	border-style: outset;
+	
+	background-color: #B27D7D;
+	width: 600px;
+	height: 400px;
+	
+	margin: 0;
+	padding: 40px;
+	
+	color: white;	
+	font-family: Geneva;
+	font-size: 22px;
+	line-height: 200%;
+}

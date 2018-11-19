@@ -1,0 +1,259 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7907C3C5-0ED7-4298-AA3A-ADFBBC9DE84E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JQuery_Examples</RootNamespace>
+    <AssemblyName>JQuery-Examples</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui.theme.css" />
+    <Content Include="Content\jquery-ui.theme.min.css" />
+    <Content Include="Content\Styles.css" />
+    <Content Include="Examples\cap01\custom-script.js" />
+    <Content Include="Examples\cap01\custom-script1.js" />
+    <Content Include="Examples\cap01\custom-script2.js" />
+    <Content Include="Examples\cap01\custom-script3.js" />
+    <Content Include="Examples\cap01\custom-script4.js" />
+    <Content Include="Examples\cap01\esempio1.html" />
+    <Content Include="Examples\cap01\esempio2.html" />
+    <Content Include="Examples\cap01\esempio3.html" />
+    <Content Include="Examples\cap01\esempio4.html" />
+    <Content Include="Examples\cap01\esempio5.html" />
+    <Content Include="Examples\cap01\esempio6.html" />
+    <Content Include="Examples\cap01\esempio7.html" />
+    <Content Include="Examples\cap01\jquery-1.7.2.min.js" />
+    <Content Include="Examples\cap01\poesie.css" />
+    <Content Include="Examples\cap02\array.html" />
+    <Content Include="Examples\cap02\customselector.css" />
+    <Content Include="Examples\cap02\esempio1.html" />
+    <Content Include="Examples\cap02\esempio2.html" />
+    <Content Include="Examples\cap02\jquery-1.7.2.min.js" />
+    <Content Include="Examples\cap02\poesie.css" />
+    <Content Include="Examples\cap03\customselector.css" />
+    <Content Include="Examples\cap03\customselector.html" />
+    <Content Include="Examples\cap03\default4.css" />
+    <Content Include="Examples\cap03\default6.css" />
+    <Content Include="Examples\cap03\esempio3.html" />
+    <Content Include="Examples\cap03\esempio4.html" />
+    <Content Include="Examples\cap03\esempio5.html" />
+    <Content Include="Examples\cap03\esempio6.html" />
+    <Content Include="Examples\cap03\jquery-1.7.2.min.js" />
+    <Content Include="Examples\cap03\moduli.css" />
+    <Content Include="Examples\cap03\rainbow.png" />
+    <Content Include="Examples\cap04\default1.css" />
+    <Content Include="Examples\cap04\default3.css" />
+    <Content Include="Examples\cap04\default4.css" />
+    <Content Include="Examples\cap04\default5.css" />
+    <Content Include="Examples\cap04\default6.css" />
+    <Content Include="Examples\cap04\default7.css" />
+    <Content Include="Examples\cap04\default8.css" />
+    <Content Include="Examples\cap04\default9.css" />
+    <Content Include="Examples\cap04\esempio1.html" />
+    <Content Include="Examples\cap04\esempio2.html" />
+    <Content Include="Examples\cap04\esempio3.html" />
+    <Content Include="Examples\cap04\esempio4.html" />
+    <Content Include="Examples\cap04\esempio5.html" />
+    <Content Include="Examples\cap04\esempio6.html" />
+    <Content Include="Examples\cap04\esempio7.html" />
+    <Content Include="Examples\cap04\esempio8.html" />
+    <Content Include="Examples\cap04\esempio9.html" />
+    <Content Include="Examples\cap04\jquery-1.7.2.min.js" />
+    <Content Include="Examples\cap05\custom-script1.js" />
+    <Content Include="Examples\cap05\custom-script2.js" />
+    <Content Include="Examples\cap05\custom-script3.js" />
+    <Content Include="Examples\cap05\default.css" />
+    <Content Include="Examples\cap05\esempio1.html" />
+    <Content Include="Examples\cap05\esempio2.html" />
+    <Content Include="Examples\cap05\esempio3.html" />
+    <Content Include="Examples\cap05\jquery-1.7.2.min.js" />
+    <Content Include="Examples\cap06\jquery-1.7.2.min.js" />
+    <Content Include="Examples\cap06\propagation.html" />
+    <Content Include="Examples\cap06\propagation.js" />
+    <Content Include="Examples\cap06\rightclick.html" />
+    <Content Include="Examples\cap08\16-em-check.png" />
+    <Content Include="Examples\cap08\16-em-cross.png" />
+    <Content Include="Examples\cap08\ajax-loader.gif" />
+    <Content Include="Examples\cap08\article.html" />
+    <Content Include="Examples\cap08\article_loader.js" />
+    <Content Include="Examples\cap08\check.php" />
+    <Content Include="Examples\cap08\DSC_0009.JPG" />
+    <Content Include="Examples\cap08\empty.gif" />
+    <Content Include="Examples\cap08\form.html" />
+    <Content Include="Examples\cap08\form.js" />
+    <Content Include="Examples\cap08\jquery-1.7.2.min.js" />
+    <Content Include="Examples\cap08\p1.txt" />
+    <Content Include="Examples\cap08\p2.txt" />
+    <Content Include="Examples\cap08\p3.txt" />
+    <Content Include="Examples\cap08\p4.txt" />
+    <Content Include="Examples\cap08\p5.txt" />
+    <Content Include="Examples\cap08\page.php" />
+    <Content Include="Examples\cap08\phototag.html" />
+    <Content Include="Examples\cap08\phototag.js" />
+    <Content Include="Examples\cap08\style1.css" />
+    <Content Include="Examples\cap08\style2.css" />
+    <Content Include="Examples\cap08\style3.css" />
+    <Content Include="Examples\cap08\suggest.php" />
+    <Content Include="Examples\cap08\words.italian.txt" />
+    <Content Include="Index.html" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\external\jquery\jquery.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\Scripts.js" />
+    <Content Include="Selettori.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\package.json" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Examples\.DS_Store" />
+    <Content Include="Examples\cap01\.DS_Store" />
+    <Content Include="Examples\cap02\.DS_Store" />
+    <Content Include="Examples\cap03\.DS_Store" />
+    <Content Include="Examples\cap04\.DS_Store" />
+    <Content Include="Examples\cap05\.DS_Store" />
+    <Content Include="Examples\cap08\.DS_Store" />
+    <Content Include="Examples\cap08\utenti" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\package.json" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50216</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50216/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+body {
+	font-family: Geneva;
+	
+	padding: 20px;
+	margin: 20px;
+
+	color: white;	
+	background-color: white;
+	width: 600px;
+}
+
+#content {
+	background-color: #B27D7D;
+	padding: 40px;
+	margin: 0;
+}

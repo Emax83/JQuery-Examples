@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	<link rel="stylesheet" type="text/css" 
+  		href="default9.css"/>
+  </head>
+  <body>
+  	<div id="content">
+  	</div>
+  	<div id="info"/>
+  </body>
+  <script>
+$.cssHooks['borderRadius'] = {
+	get: function(elem, computed, extra){
+	    return $(elem).data('_borderRadius');
+	},
+	set: function(elem, value){
+		$(elem).css('-moz-border-radius', 
+			value);
+		$(elem).css('-webkit-border-radius', 
+			value);
+		$(elem).css('-khtml-border-radius', 
+			value);
+		elem.style.borderRadius = value;
+		$(elem).data('_borderRadius', value);
+	}
+};
+
+$('#content').css('borderRadius', 20);
+$('#info').css('borderRadius', 10);
+
+var text = "";
+text += "Raggio del bordo: ";
+text += $('#content').css('borderRadius');
+
+$('#info').text(text);
+  </script>
+</html>

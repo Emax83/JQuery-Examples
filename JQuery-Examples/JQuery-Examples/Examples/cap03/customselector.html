@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	<script type="text/javascript">
+$(document).ready(function(){
+	$.extend($.expr[':'], {  
+		over100pixels: function(a) {  
+	        return $(a).height() > 100;  
+	    }  
+	}); 
+	
+	$('div:over100pixels')
+		.css('border-color', 'black')
+		.css('border-width', '5px')
+		.css('border-style', 'dashed');
+}); 
+  	</script>
+  	<link rel="stylesheet" type="text/css" 
+  		href="customselector.css"/>
+  </head>
+  <body>
+  	<div id="block1">
+  	</div>
+  	<div id="block2">
+  	</div>
+  	<div id="block3">
+  	</div>
+  </body>
+</html>

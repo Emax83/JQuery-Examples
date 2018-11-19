@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	<link rel="stylesheet" type="text/css" 
+  		href="default4.css"/>
+  </head>
+  <body>
+  	<h1>Mappa del sito</h1>
+  	<ul>
+  		<li>Azienda
+  			<ul>
+  				<li>Chi siamo</li>
+  				<li>Mission</li>
+  				<li>Carta dei valori</li>
+  				<li>Contatti – 
+  					<span>telefono
+  						(<span>sede 1</span>
+  						<span>sede 2</span>)
+  					</span>
+  					&nbsp;//&nbsp;
+  					<span>mail</span>
+  					&nbsp;//&nbsp;
+  					<span>twitter</span>
+  				</li>
+  			</ul>
+  		</li>
+  		<li>Prodotti
+  			<div>Software</div>
+  			<ul>
+  				<li>OfficeBump</li>
+  				<li>BrowserBump</li>
+  				<li>SketchBump</li>
+  				<li>PaintBump</li>
+  			</ul>
+  			<ul>
+  				<li>Angry Bump</li>
+  				<li>Cut the Bump</li>
+  				<li>Need for Bump</li>
+  			</ul>
+  			<div>Hardware</div>
+  			<ul>
+  				<li>myPhone</li>
+  				<li>myPad</li>
+  				<li>myPod</li>
+  			</ul>
+  		<li>Soluzioni</li>
+  		<li>Referenze</li>
+  		<li>Supporto tecnico</li>
+  	</ul>
+  	</ul>
+  <script>
+  	//$('li > span').addClass('highlighted');
+  	//$('li span').addClass('highlighted');
+  	//$('div + ul').addClass('highlighted');
+  	//$('div ~ ul').addClass('highlighted');
+  	$('span, div').addClass('highlighted');
+  </script>
+  </body>
+</html>

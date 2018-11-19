@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	<link rel="stylesheet" type="text/css" 
+  		href="default4.css"/>
+  </head>
+  <body>
+  	<div id="content">
+  		<div class="normal">Spider man</div>
+  		<div class="normal">Superman</div>
+  		<div class="normal">Iron man</div>
+  		<div class="normal">Thor</div>
+  		<div class="normal">
+  			Captain America</div>
+  		<div class="normal">
+  			Wonder Woman</div>
+  			
+  		<div id="info"></div>
+  	</div>
+  </body>
+  <script>
+  	var divs = $('div:not(#content, #info)');
+  	divs.addClass( 
+  		function(index) {
+  			if (index < 2) {
+  				return undefined;
+  			}
+  			if (index % 2 == 0) {
+  				return 'highlighted';
+  			}
+  		}
+  	);
+  	divs.removeClass( 
+  		function(index) {
+  			if (index < 2) {
+  				return 'normal';
+  			}
+  			if (index % 2 == 0) {
+  				return 'normal';
+  			}
+  			return null;
+  		}
+  	);
+  	
+  	var text = 'div evidenziati: ';
+  	for (i = 0; i < divs.length; i++) {
+  		var hc = $(divs[i])
+  			.hasClass('highlighted');
+  			
+  		if (hc) {
+  			text += i + ", ";
+  		}
+  	}
+  	if (text.substr(-2) === ', ') {
+  		text = text.substr(0, 
+  			text.length - 2);
+  	}
+  	$('#info').append(text);
+  </script>
+</html>

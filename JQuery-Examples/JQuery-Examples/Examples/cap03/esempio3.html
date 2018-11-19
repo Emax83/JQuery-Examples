@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	
+  	<link rel="stylesheet" type="text/css" 
+  		href="moduli.css"/>
+  </head>
+  <body>
+  	<h1>Modulo di registrazione</h1>
+  	<table>
+  		<tr>
+  			<td>Nome</td>
+  			<td><input name="nome"/></td>
+  		</tr>
+  		<tr>
+  			<td>Cognome</td>
+  			<td><input name="cognome"/></td>
+  		</tr>
+  		<tr>
+  			<td>Mail</td>
+  			<td><input name="mail"/></td>
+  		</tr>
+  		<tr>
+  			<td>Password</td>
+  			<td><input type="password" 
+  					name="password"/></td>
+  		</tr>
+  		<tr>
+  			<td>Newsletter</td>
+  			<td>
+  				<label>
+  					<input type="radio" 
+  						name="newsletter" 
+  						value="Default"/>
+  					<span/>
+  				</label>
+  				<br/>
+  				<label>
+  					<input type="radio" 
+  					  	name="newsletter" 
+  					  	value="Generale" />
+  					<span>Generale</span>
+  				</label>
+  				<br/>
+  				<label>
+  					<input type="radio" 
+  						name="newsletter" 
+  			value="Promozioni speciali" />
+  					<span>Promozioni speciali
+  					</span>
+  				</label>
+  				<br/>
+  				<label>
+	  				<input type="radio" 
+	  					name="newsletter" 
+	  					value="(nessuna)" 
+	  					checked="checked"/>
+  					<span>(nessuna)</span>
+  				</label>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td></td>
+  			<td><input type="submit" 
+  						value="Invia"/></td>
+  		</tr>
+	</table>
+	<script>
+$(function(){
+	// seleziona campi nome e cognome
+	//$('input[name*="ome"]').css('background-color', '#FFEFD5');
+	
+	// seleziona campo Promozioni speciali
+	/*$('input[value~="speciali"]').parent()
+		.css('border-color', 'red')
+		.css('border-size', '1px')
+		.css('border-style', 'solid');
+		*/
+		
+	// seleziona il campo mail
+	//$('input[name$="ail"]').val('example@mail.com');
+	
+	// seleziona il campo submit
+	//$('input[value="Invia"]').css('width', '100px');
+	
+	// individua tutti i radio button tranne l'ultimo
+	//$('input[value!="(nessuna)"]:radio').next().append(' <img src="rainbow.png"/>');
+	
+	// individua password
+	//$('input[name^="pass"]').val("secret");
+	
+	// selezione multipla
+	$('input[type="radio"][value="Default"]').next().append('Default');
+});
+	</script>
+  </body>
+</html>

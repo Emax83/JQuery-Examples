@@ -1,0 +1,27 @@
+body, h1, blockquote, p {
+	font-family: Geneva;
+	color: #666666;
+}
+
+body {
+	padding: 20px;
+	margin: 20px;
+	
+	background-color: white;
+}
+
+#block1, #block2, #block3 {
+	background-color: #999999;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+#block2 {
+	background-color: #777777;
+	height: 100px;
+}
+
+#block3 {
+	background-color: #555555;
+	height: 75px;
+}

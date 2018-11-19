@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<script type="text/javascript" 
+  		src="jquery-1.7.2.min.js"></script>
+  	<link rel="stylesheet" type="text/css" 
+  		href="default8.css"/>
+  </head>
+  <body>
+  	<div id="content">
+  		<div id="playarea">
+	  		<div id="payload"/>
+	  	</div>
+  	</div>
+	<div id="info">&nbsp;</div>
+	<button id="reposition">Riposiziona
+	</button>
+  </body>
+  <script>
+setInterval(update, 1000);
+
+$('#reposition').click( function() {
+	var o = $('#playarea');
+
+	o.scrollLeft(0);	
+} );
+
+function update() {
+	var o = $('#playarea');
+	var text = 
+		"(" + o.scrollLeft() + ", " + 
+		      o.scrollTop() + ")";
+		      
+	$('#info').text(text);
+}
+  </script>
+</html>
